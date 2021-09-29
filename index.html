@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGM-Task1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- page 1 - Nav and Corousel -->
+
+    <nav class="navbar navbar-expand-md bg-danger navbar-dark">
+        <a class="navbar-brand" href="#">Zippy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
+      
+        <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+				<li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+				<li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img alt="First slide" class="d-block w-100"
+						src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80">
+					<div class="carousel-caption w-60">
+						<h1 style="text-align: center; margin-bottom: 40%;">One page Promising to fill all your need</h1>
+                        <button class="btnn">Learn More</button>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img alt="Second slide" class="d-block w-100"
+						src="https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80">
+					<div class="carousel-caption w-60">
+						<h1 style="text-align: center; margin-bottom: 40%;">One page Promising to fill all your need</h1>
+                        <button class="btnn">Learn More</button>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img alt="Third slide" class="d-block w-100"
+						src="https://images.unsplash.com/photo-1552083375-1447ce886485?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80">
+					<div class="carousel-caption w-60">
+						<h1 style="text-align: center; margin-bottom: 40%;">One page Promising to fill all your need</h1>
+                        <button class="btnn">Learn More</button>
+					</div>
+				</div>
+			</div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators"
+				role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span
+					class="sr-only">Previous</span></a>
+			<a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button"><span
+					aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+		</div><
+
+    <!-- page 2 - Welcome -->
+
+    <div class="welcome">
+
+        <h1>Welcome to Zippy</h1>
+        
+        <div class="content">
+            <div class="text">
+                <p>This is Photoshop's version Asperiores deserunt numquam quaerat magni quia sit quasi adipisci atque dolore quos maxime praesentium debitis delectus natus, aperiam quod qui amet nulla?</p>
+            </div>
+            <div class="umbrella">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+        </div>
+
+        <div class="sections">
+            <div class="section">
+                <i class="far fa-bell"></i>
+                <h4>LOREM IPSUM</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing lmao elit. Verie repudiandae voluptates eligendi quis similique lol de volupte aliquam ab.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="section">
+                <i class="fas fa-envelope"></i>
+                <h4>LOREM IPSUM</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing lmao elit. Verie repudiandae voluptates eligendi quis similique lol de volupte aliquam ab.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="section">
+                <i class="fas fa-air-freshener"></i>
+                <h4>LOREM IPSUM</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing lmao elit. Verie repudiandae voluptates eligendi quis similique lol de volupte aliquam ab.</p>
+                <button>Learn More</button>
+            </div>
+            
+        </div>
+        <br>
+        <hr>
+    </div>
+
+
+    <!-- Page - 3 - Projects -->
+
+    <div class="projects">
+        <h1>Projects</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1538391543564-047a76156421?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=465&q=80" alt="">
+
+                <div class="section">
+                    <h4>Project Name</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing lmao elit. Verie repudiandae voluptates eligendi quis</p>
+                    <button>Launch Case Study</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" alt="">
+
+                <div class="section">
+                    <h4>Project Name</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing lmao elit. Verie repudiandae voluptates eligendi quis</p>
+                    <button>Launch Case Study</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1510674485131-dc88d96369b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=349&q=80" alt="">
+
+                <div class="section">
+                    <h4>Project Name</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing lmao elit. Verie repudiandae voluptates eligendi quis</p>
+                    <button>Launch Case Study</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1611264327630-8090373c8cef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80" alt="">
+
+                <div class="section">
+                    <h4>Project Name</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing lmao elit. Verie repudiandae voluptates eligendi quis</p>
+                    <button>Launch Case Study</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="pricing">
+            <h1>Pricing Table</h1>
+
+            <div class="sections">
+                <div class="section">
+                    <h4>STANDARD PLAN</h4>
+                    <span>Free</span>
+                    <p>2 GB Available<br> 15 max. contacts<br> 30 Messages<br> Ads</p>
+                    <button>BUY</button>
+                </div>
+                <div class="section" id="unique">
+                    <h4>BUSINESS PLAN</h4>
+                    <span>195/MONTH</span>
+                    <p>10 GB Available<br> 75 max. contacts<br> 120 Messages<br> Ads Free</p>
+                    <button>BUY</button>
+                </div>
+                <div class="section">
+                    <h4>PREMIUM PLAN</h4>
+                    <span>145/MONTH</span>
+                    <p>100 GB Available<br> Unlimited contacts<br> Unlimited Messages <br>Ads Free</p>
+                    <button>BUY</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+    <!-- Page 4 - Video Projects -->
+
+    <div class="videoProjects">
+        <h1>Video Projects</h1>
+
+        <div class="videos">
+
+            <div class="div1">
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1516724562728-afc824a36e84?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80" alt="">
+                </div>
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1532456164788-984c62717cf8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1112&q=80" alt="">
+                </div>
+            </div>
+
+            <div class="div2">
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1159&q=80" alt="">
+                </div>
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1534131707746-25d604851a1f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div> <br>
+
+    <!-- Page 5 - Team -->
+
+    <div class="team">
+        <h1>Zippy Team</h1>
+        <div class="users">
+
+            <div class="div3">
+
+            <div class="user">
+                <img src="https://images.unsplash.com/photo-1485178575877-1a13bf489dfe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1101&q=80" alt="">
+                <h4>SARA JOHNSON</h4>
+                <p>creative Head</p>
+            </div>
+            <div class="user">
+                <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+                <h4>JOHN DOE</h4>
+                <p>Art Director</p>
+            </div>
+            <div class="user">
+                <img src="https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+                <h4>CLARK KENT</h4>
+                <p>Senior Designer</p>
+            </div>
+
+            </div>
+
+            <div class="div4">
+
+            <div class="user">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+                <h4>BRUCE WAYNE</h4>
+                <p>Marketing Manager</p>
+            </div>
+            <div class="user">
+                <img src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+                <h4>ANGEL WILLIAMS</h4>
+                <p>SEO MONSTER</p>
+            </div>
+            <div class="user">
+                <img src="https://images.unsplash.com/photo-1490195117352-aa267f47f2d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+                <h4>GAL MASON</h4>
+                <p>Media Head</p>
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+
+    <div class="life">
+        <h1>Life in Zippy</h1>
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+    </div>
+
+    <div class="newsletter">
+        <h1>Newsletter Signup</h1>
+        <input type="email" placeholder="abc@example.com">
+        <button type="submit">Sign In</button>
+        <button> Sign Up </button>
+    </div>
+
+    <!-- Blog -->
+
+    <div class="big-blog">
+        <h1>Blog</h1>
+        
+        <div class="blogs">
+            <div class="blog">
+                <img src="https://images.unsplash.com/photo-1532635241-17e820acc59f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=815&q=80" alt="">
+                <h4>lOREM IPSUM DOLOR SIT AMET</h4>
+                <span>15 Jan, 2015</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eligendi non impedit distinctio atque id.</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="blog">
+                <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="">
+                <h4>lOREM IPSUM DOLOR SIT AMET</h4>
+                <span>15 Jan, 2015</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eligendi non impedit distinctio atque id.</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="blog">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="">
+                <h4>lOREM IPSUM DOLOR SIT AMET</h4>
+                <span>15 Jan, 2015</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eligendi non impedit distinctio atque id.</p>
+                <button>READ MORE</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Map -->
+
+    <div class="contacts">
+        <div class="map">
+            <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1031&q=80" alt="">
+        </div>
+
+        <div class="contact">
+            <h1>Contact</h1>
+
+            <label>Name</label><br>
+            <input type="text"><br>
+
+            <label>Email</label><br>
+            <input type="email"><br>
+
+            <label>Subject</label><br>
+            <input type="text"><br>
+
+            <label>Message</label><br>
+            <input type="text" id="textarea"><br>
+
+            <button>Send</button>
+        </div>
+    </div>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Company Name</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">Company Name ©️ 2018</p>
+            </div>
+        </footer>
+
+</body>
+</html>
